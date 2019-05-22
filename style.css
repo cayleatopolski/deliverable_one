@@ -1,0 +1,151 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* NAV */
+
+.top-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    padding: 20px 50px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #88898B;
+}
+
+a:hover {
+    color: #FF4850;
+}
+
+.adopt-me {
+    flex-grow: 1;
+}
+
+
+/* BODY */
+
+body {
+    background-color: #F0ECEE;
+    background: url("file:///C:/Users/woahi/Desktop/topolski-deliverable-one/bulldog.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.para-container {
+    padding: 50px;
+    height: 50%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    font-size: 2em;
+    color: black;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+p {
+    color: #88898B;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+strong {
+    color: #FF4850;
+}
+
+
+/* BUTTON */
+
+.btn-container {
+    padding: 20px 0px;
+}
+
+.button-one {
+    background-color: #FF4850;
+    padding: 1em 1em;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.button-two {
+    background-color: #FF4850;
+    padding: 1em 4em;
+    border-radius: 15px;
+    color: white;
+    font-weight: 300;
+    width: 100px;
+    text-align: center;
+}
+
+.button-one:hover,
+.button-two:hover {
+    background-color: #CCC;
+    border-color: #CCC;
+}
+
+
+/* MEDIA */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: #F0ECEE;
+        background-image: none;
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .top-container {
+        padding: 0;
+        display: block;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        display: flex;
+        padding: 5px;
+        font-size: 25px;
+    }
+    .the-nav {
+        padding: 0;
+    }
+    .para-container {
+        width: 100%;
+        padding: 0;
+    }
+    .button-one {
+        padding: 25px 122px;
+    }
+    .button-two {
+        width: 46%;
+        font-size: 25px;
+        padding: 25px 100px;
+    }
+}
