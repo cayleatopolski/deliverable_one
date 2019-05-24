@@ -1,105 +1,85 @@
 html,
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
+    background-color: #F0ECEE;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 
 /* NAV */
 
-.top-container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: flex-end;
-    padding: 20px 50px;
+header {
+    margin: 0 24px;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    margin-left: 0;
+    list-style: none;
     padding: 0;
 }
 
 li {
-    text-decoration: none;
-    padding: 10px;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: #88898B;
+    font-weight: 300;
+    padding: 2px;
 }
 
 a:hover {
     color: #FF4850;
 }
 
-.adopt-me {
-    flex-grow: 1;
-}
-
 
 /* BODY */
 
-body {
-    background-color: #F0ECEE;
-    background: url("file:///C:/Users/woahi/Desktop/topolski-deliverable-one/bulldog.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: auto;
-    font-family: 'Fira Sans', sans-serif;
-}
-
-.para-container {
-    padding: 50px;
-    height: 50%;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+main {
+    margin: 10px 24px 0px 24px;
 }
 
 span {
     font-size: 2em;
     color: black;
     font-weight: 600;
-    line-height: 50px;
-}
-
-p {
-    color: #88898B;
-    font-size: 20px;
-    line-height: 30px;
 }
 
 strong {
     color: #FF4850;
 }
 
+p {
+    color: #88898B;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 
 /* BUTTON */
 
-.btn-container {
-    padding: 20px 0px;
-}
-
 .button-one {
     background-color: #FF4850;
-    padding: 1em 1em;
+    padding: 25px 122px;
     border-radius: 15px;
     color: white;
     text-align: center;
     font-weight: 300;
+    flex-grow: 1;
 }
 
 .button-two {
     background-color: #FF4850;
-    padding: 1em 4em;
+    width: 100%;
+    padding: 25px 100px;
     border-radius: 15px;
     color: white;
     font-weight: 300;
-    width: 100px;
     text-align: center;
 }
 
@@ -109,43 +89,58 @@ strong {
     border-color: #CCC;
 }
 
+.btn-container {
+    display: flex;
+}
 
-/* MEDIA */
 
-@media only screen and (max-width: 767px) {
-    body {
-        background-color: #F0ECEE;
-        background-image: none;
-        margin: 0;
-        width: 100%;
-        padding: 20px;
-    }
-    .top-container {
-        padding: 0;
-        display: block;
+/* Desktop */
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        padding: 20px 50px;
     }
     ul {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        margin-left: 0;
+        padding: 0;
     }
     li {
-        display: flex;
-        padding: 5px;
-        font-size: 25px;
+        text-decoration: none;
+        padding: 10px 0px,
     }
-    .the-nav {
-        padding: 0;
+    a {
+        padding: 10px;
+    }
+    .adopt-me {
+        flex-grow: 1;
+    }
+    /* BODY */
+    body {
+        background-color: #F0ECEE;
+        background: url("bulldog.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: auto;
+        font-family: 'Fira Sans', sans-serif;
     }
     .para-container {
-        width: 100%;
-        padding: 0;
+        padding: 50px;
+        height: 50%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .button-one {
-        padding: 25px 122px;
+        padding: 1em 1em;
     }
     .button-two {
-        width: 46%;
-        font-size: 25px;
-        padding: 25px 100px;
+        background-color: #FF4850;
+        padding: 1em 4em;
+        width: 100px;
     }
 }
